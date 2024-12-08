@@ -1,4 +1,4 @@
-import styles from '../../styles/index.module.css';
+import styles from './index.module.css';
 const Footer: React.FC = () => {
     const now = new Date();
 
