@@ -1,62 +1,16 @@
-
 .container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: left;
-  margin: 5% 3%;
-}
-
-.userCard {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 3% ;
+  min-height: 100vh;
+  align-items: left;
+  margin: 5% 3%;
+  padding: 5%;
 }
 
-.userCard img {
-  margin: 50%;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
 
-.userCard h1 {
-  margin: 10px 0;
-  color: #333;
-}
 
-.userCard h3 {
-  margin: 5px 0;
-  color: #666;
-}
 
-.skills {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
 
-.skill {
-  background-color: #00ced1;
-  color: #fff;
-  padding: 2%;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.footer {
-  width: 100%;
-  text-align: left;
-  position: fixed;
-  bottom: 0;
-}
-
-.footer p {
-  font-size: 15pt;
-  color: #666;
-}

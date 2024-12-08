@@ -1,28 +1,15 @@
-import UserCard from './widgets/ui/Author';
-import UserSkills from './widgets/ui/Skills';
-import Footer from './widgets/ui/Footer';
+import UserCard from './widgets/User/User';
+import UserSkills from './widgets/Skills/Skills';
+import Footer from './widgets/Footer/Footer';
 import styles from './styles/index.module.css';
-
-const author = {
-  firstName: 'Andrei',
-  lastName: 'Miller',
-  age: 16,
-  role: 'developer',
-  place: 'Russia'
-};
-
-const skills = [
-  { id: 1, value: 'HTML' },
-  { id: 2, value: 'CSS' },
-  { id: 3, value: 'JS' },
-  { id: 4, value: 'Python' },
-];
+import skills from './widgets/Skills/skillsData';
+import user from './widgets/User/userData';
 
 const App: React.FC = () => {
   return (  
     <div className={styles.container}>
-      <UserCard author={author}/>
-      <UserSkills skills={skills}/>
+      <UserCard user={user}/>
+      <UserSkills skills={skills} />
       <Footer />
   </div>
   );
