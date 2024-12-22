@@ -10,7 +10,25 @@
   padding: 5%;
 }
 
+.lightTheme {
+  background-color: white;
+  color: black;
+}
 
+.darkTheme {
+  background-color: black;
+  color: white;
+}
+
+.Button{
+  background-color: #00ced1;
+  color: #fff;
+  padding: 2%;
+  margin: 0% 1% 1% 1%;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
 
 
 
