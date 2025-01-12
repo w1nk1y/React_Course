@@ -5,12 +5,25 @@ import countries from './data';
 import { Countries } from './types';
 import Image from 'next/image';
 
+let usedIndex = new Set();//при обновлении компонента чистится set!
+
 const App: React.FC = () => {
     const [selectedCountry, setSelectedCountry] = useState<Countries>();
-  
+
+    
+    if (usedIndex.size===countries.length){
+      usedIndex.clear();
+    };
+
     const randomCountry = () => {
       const index = Math.floor(Math.random() * countries.length);
-      setSelectedCountry(countries[index]);
+      if (usedIndex.has(index)) {
+        randomCountry();
+      } 
+      else{
+        usedIndex.add(index);
+        setSelectedCountry(countries[index]);
+      }
     };
   
     return (
